@@ -19,10 +19,9 @@ function todaysDate(){
     const date = new Date();
 
     const year = date.getFullYear();
-    const month = date.getMonth();
-    const day = date.getDay();
+    const month = date.getMonth() + 1;
+    const day = date.getDate();
 
     document.getElementById("date").innerText = `${month}, ${day}, ${year}`;
 }
 window.onload = todaysDate
-window.onload = time

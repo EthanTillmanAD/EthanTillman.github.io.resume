@@ -103,9 +103,9 @@ nav #links a:hover{
     flex-flow: row;
     gap: 1;
     flex-grow: 1;
-    width: 1321px;
+    width: 100%;
     justify-content: space-evenly;
-    height: 500px;
+    height: 350px;
     
    
 }
@@ -125,7 +125,8 @@ nav #links a:hover{
     align-items: center;
     justify-content: left;
     flex-flow: row wrap;
-    margin-top: 15px;    
+    margin-top: 15px;   
+    text-decoration: underline; 
 }
 
 #about-me-contact h3 {
@@ -169,7 +170,7 @@ nav #links a:hover{
     padding-bottom: 10px;
     max-width: 200px;
     display: flex;
-   
+    text-decoration: underline;
     margin-bottom: 5px;
     align-items: center;
     justify-content: left;
@@ -198,6 +199,7 @@ nav #links a:hover{
 }
 
 #skills h2{
+    text-decoration: underline;
     max-width: 200px;
     display: flex;
     
@@ -232,8 +234,12 @@ nav #links a:hover{
     justify-content: center;
     flex-flow: wrap;
     max-height: 50px;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
+    padding-top: 10px;
     
+}
+.more-info {
+    padding-left: 10px;
 }
 /* .more-info p{
     display: flex;
@@ -245,10 +251,12 @@ nav #links a:hover{
 
 } */
 footer{
-    width: 900px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 #date{
-    font-size: 1000px;
+    font-size: 90px;
 }
 
 
@@ -259,34 +267,52 @@ footer{
 
 
 
+/*this adjusts the linked in for phone screen*/
 
 
 
-
- @media screen and (max-width:960px) {/*this adjusts the linked in for phone screen*/
-   
+ @media screen and (max-width:960px) and (orientation: portrait){
+    footer{
+        margin-top: 20px;
+        display: flex;
+         
+        justify-content : right;
+        width: 95%;
+    }
+    #date{
+        font-size: 35px;
+    }
 
     #spacing-about-me{
         display: flex;
         flex-flow: column;
-        
         width: 100%;
         justify-content: space-evenly;
         height: 500px;
         
        
     }
+    #elevator-pitch{
+        
+        padding-left: 0px;
+        
+    }
+    .more-info {
+        padding-left: 0px;
+    }
 nav #links{
-    width: 480px;
+    width: 100%px;
 }
     #welcome{
-        width: 480px;
+        width: 100%;
+      
     }
-    #profile-pic{
-        width: 75%;
+    #profile-pic img{
+        width: 100%;
     }
-    #info{
-        width: 25%;
+    #info p{
+        margin-left: 5px;
+        width: 190px;
     }
     #info div{
         height: 75%;
@@ -294,6 +320,15 @@ nav #links{
     .main-content{
         max-height: 300px ;
     }
+    #github{
+        width: 85%;
+        
+    }
+    #linkedin{
+        
+        width: 85%;
+    }
+    
 
 
 
@@ -304,6 +339,16 @@ nav #links{
    
    width: 200px ;      
    }
+   #about-me-contact h2{
+    margin-left: 2px;
+   }
+   #about-me-contact h3{
+    margin-left: 2px;
+   }
+   #about-me-contact p{
+
+    margin-left: 2px;
+   }
     #linkedin{
         border-top-width: 5px;
     }
@@ -311,13 +356,34 @@ nav #links{
         display: flex;
         flex-flow: column;
         padding-top: 150px;
-        margin-left: 20px;
+        margin-left: 2px;
         padding-bottom: 50px;
     }
     #skills{
         display: flex;
         flex-flow: column;
         padding-top: 160px;
-        margin-left: 20px;
+        margin-left: 2px;
+        
     }
+
  }
+ 
+ @media screen and (max-width: 60px) and (orientation: landscape) {
+    #welcome{
+        width: 768px;
+    }
+    nav #links{
+        width: 765px;
+    }
+    #spacing-about-me{
+        width: 130%;
+    }
+    #info{
+
+        width: 110%;
+    }
+    #info p{
+        margin-left: 10px;
+    }
+}
