@@ -369,7 +369,7 @@ nav #links{
 
  }
  
- @media screen and (max-width: 60px) and (orientation: landscape) {
+ @media screen and (max-width: 960px) and (orientation: landscape) {
     #welcome{
         width: 768px;
     }
