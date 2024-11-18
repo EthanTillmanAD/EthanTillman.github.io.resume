@@ -257,10 +257,28 @@ footer{
 }
 #date{
     font-size: 90px;
+    animation: flashy 5s infinite;
 }
 
 
-
+@keyframes flashy {
+    0%{
+        color: blue;
+    }
+    
+    25%{
+       color: chartreuse;
+    }
+    50%{
+        color: crimson;
+    }
+    75%{
+        color: darkorchid;
+    }
+    100%{
+        color: blue;
+    }
+}
 
 
 
@@ -279,8 +297,17 @@ footer{
         width: 85%;
     }
     #date{
-        font-size: 35px;
+        font-size: 25px;
+       
     }
+    /* #date:hover{
+        
+       animation: flashy 5s infinite;
+
+    
+    } */
+
+    
 
     #spacing-about-me{
         display: flex;
